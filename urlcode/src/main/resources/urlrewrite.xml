@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
+
+<urlrewrite use-query-string ="true" >
+  <!--  <rule>
+        <from>/wechat/order/entry2/([0-9]{10})</from>
+        <to type="redirect">https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx431d08740e768534&amp;redirect_uri=http://liuzhen.nat300.top/wechat/order/pay&amp;response_type=code&amp;scope=snsapi_base&amp;state=$1&amp;connect_redirect=1#wechat_redirect</to>
+    </rule>-->
+    <rule>
+        <from>/wechat/order/entry2/([0-9]{10})</from>
+        <to type="redirect">https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx3b7ee58a475d50d5&amp;redirect_uri=http://wchat.i-emt.com/wechat/order/pay&amp;response_type=code&amp;scope=snsapi_base&amp;state=$1&amp;connect_redirect=1#wechat_redirect</to>
+    </rule>
+
+   <!-- <rule>
+        <from>/wechat/order/entry1\?cons=([0-9]{10})</from>
+        <to type="redirect">https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx431d08740e768534&amp;redirect_uri=http://liuzhen.nat300.top/wechat/order/pay&amp;response_type=code&amp;scope=snsapi_base&amp;state=$1&amp;connect_redirect=1#wechat_redirect</to>
+    </rule>-->
+    <rule>
+        <from>/wechat/order/entry1\?cons=([0-9]{10})</from>
+        <to type="redirect">https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx3b7ee58a475d50d5&amp;redirect_uri=http://wchat.i-emt.com/wechat/order/pay&amp;response_type=code&amp;scope=snsapi_base&amp;state=$1&amp;connect_redirect=1#wechat_redirect</to>
+    </rule>
+</urlrewrite>
